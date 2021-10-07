@@ -1,0 +1,47 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.orange-space{
+    color: #ffffff;
+    background-color: rgb(255, 145, 0);
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 130px;
+    left: 450px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+input{
+    display: none;
+}
+
+h4{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 200;
+    margin-left: 40px;
+    margin-top: 220px;
+    border: 1px solid #ffffff;
+    padding: 5px 12px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.number{
+    margin-left: 120px;
+}
+h4:hover{
+    background-color: orange;
+}
+

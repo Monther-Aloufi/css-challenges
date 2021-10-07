@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  color: #786450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenr{
+  padding: 50px;
+  background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+  border-radius: 2px;
+  text-align: center;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 2px;
+  display: flex;
+}
+
+.left{
+  padding: 42px;
+}
+
+.c1{
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid ;
+  border-color: #786450 #786450 #786450 transparent;
+  margin-left: -3px;
+  margin-top: -3px;
+  transition: transform 1.5s;
+}
+
+.c2{
+  width: 82px;
+  height: 82px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #786450 transparent #786450 #786450;
+  border-radius: 50%;
+  margin-left: -7px;
+  margin-top: -6px;
+  transition: transform 1.5s;
+}
+
+.image {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.img-profile{
+  background-color: rgba(255, 99, 71, 0.514);
+  width: 70px;
+  border-radius: 50%;
+  height: 70px;
+  margin-left: 25px;
+  
+}
+
+.img-profile:hover{
+  cursor: pointer;
+}
+
+.img-profile:hover .c2{
+  transform: rotate(-360deg);
+}
+
+.img-profile:hover .c1{
+  transform: rotate(360deg);
+}
+
+.information{
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+}
+
+.name{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.occupation{
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.btns{
+  font-size: 14px;
+}
+
+.btn{
+  border: 1px solid #786450;
+  padding: 5px 30px;
+  border-radius: 100px;
+  text-align: center;
+  transition: 0.3s ease-out;
+  cursor:-webkit-grab;
+  margin-bottom: 10px;
+}
+
+.btn:hover{
+  background-color: #786450;
+  color: #fff;
+}
+
+.card{
+  background-color: #F5E8DF;
+  height: 99px;
+  width: 100px;
+  margin-bottom: 1px;
+  transition: background-color 0.3s;
+}
+
+.card:last-of-type{
+  height: 100px;
+}
+
+
+.card:hover{
+  background-color: #d8c7bb;
+
+}
+
+.number{
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  
+}
+
+.name-card{
+  font-size: 11px;
+  font-weight: 300;
+  
+  
+}

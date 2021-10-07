@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.farm{
+    border-radius: 5px;
+    padding: 50px 75px;
+    background: linear-gradient(to top right, #FDA231 0%, #FDCA31 100%);
+    
+}
+
+.box{
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    color: #497081;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+.head{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 35px;
+    width: 175px;
+    border-bottom: 1.4px solid #49708131;
+    
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.subtitle{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+input{
+    display: none;
+}
+
+ul{
+    font-size: 13px;
+    margin: 30px;
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.checkmark{
+    fill: none;
+    stroke: #49708171;
+    stroke-width: 1.5;
+    stroke-dasharray: 30 30;
+    stroke-dashoffset: 30;
+    position: absolute;
+    right: 10.5%;
+    margin-top: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.text{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #49708171;
+    border-radius: 50%;
+    position: absolute;
+    right: 9.5%;
+    margin-top: 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input:checked ~ .text{
+    color: #C8D4D9;
+    transition: all 0.5s;
+}
+
+input:checked ~ .button{
+    transition: all 0.5s;
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+input:checked ~ .checkmark{
+    stroke-dashoffset: 0;
+    transition: all 0.5s;
+
+}

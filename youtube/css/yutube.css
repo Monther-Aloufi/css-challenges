@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(248, 248, 248);
+  font-family: 'Lato', sans-serif;
+  font-size: 160%;
+}
+
+
+/*--------HEADER--------*/
+
+header{
+  background-color: #fff;
+  height: 70px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  width: 84%;
+}
+
+header span{
+  color: rgb(75, 75, 75);
+  
+}
+
+.left-header{
+  display: flex;
+}
+
+.right-header{
+  margin-left: 35%;
+  margin-top: -45px; 
+}
+
+.img-account{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 25px;
+}
+
+.icon-bell{
+  font-size: 90%;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.icon-video-camera{
+  margin-top: 18px;
+  margin-left: 35px;
+
+}
+
+.search-icon{
+  width: 20px;
+  border: 1px solid rgb(177, 177, 177);
+  border-right: none;
+  padding: 4.7px 15px;
+  border-radius: 2px;
+  margin-top: -5px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.search-area{
+  width: 50%;
+  height: 30px;
+  border: none;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 2px 0 0 2px;
+  font-size: 70%;
+  font-weight: 300;
+  direction: rtl;
+}
+
+.icon-keyboard{
+  font-size: 85%;
+  position: absolute;
+  top: 26px;
+  left: 41.5%;
+
+}
+
+.icon-mic{
+  font-size: 85%;
+  
+}
+
+/*--------TAGS--------*/
+
+
+.tags-area{
+  background-color: #fff;
+  min-height: 55px;
+  width: 84%;
+    
+}
+
+.tags{
+  margin-left: 75px;
+  display: flex;
+
+}
+
+
+.tag{
+  font-size: 50%;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-left: 15px;
+  color: rgb(71, 71, 71);
+  background-color: rgb(248, 248, 248);
+  padding: 0px 10px;
+  padding-top: 5px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 100px;
+  height: 20px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.tag:first-of-type{
+  margin-left: -50px;
+}
+
+.tag:hover{
+  background-color: rgb(228, 228, 228);
+}
+
+/*--------SAIDBAR--------*/
+
+.saidbar{
+  float: right;
+  background-color: #fff;
+  direction: rtl;
+  width: 16%;
+  min-height: 765px;
+  margin-top: -126px;
+}
+
+.saidbar span{
+  display: inline-block;
+}
+
+.head-saidbar{
+  margin-right: 45px;
+  margin-top: 10px;
+
+}
+
+.name-youtube{
+  font-size: 100%;
+  margin-bottom: -10px;
+}
+
+.jordan{
+  font-size: 50%;
+  color: rgb(112, 112, 112);
+  position: relative;
+  top: -35px;
+  right: -17px;
+}

@@ -1,0 +1,118 @@
+@media only screen and (max-width: 480px){
+
+  /*-------- HEADER --------*/
+  header{
+    height: 35px;
+    width: 92%;
+  }
+
+  .img-account{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 5px;
+  }
+
+  .icon-bell{
+    font-size: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .icon-video-camera{
+    font-size: 55%;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .right-header{
+    margin-left: 25%;
+  }
+
+  .icon-mic{
+    font-size: 40%;
+    margin-top: 10px;
+    padding: 4px 4px;
+    position: relative;
+    top: 4px;
+  }
+
+  .search-icon{
+    width: 10px;
+    padding: 4px 8px;
+    position: relative;
+    top: 10px;
+
+  }
+
+  .icon-keyboard{
+    font-size: 40%;
+    position: relative;
+    left: 15%;
+    top: 5px;
+  }
+
+  .search-area{
+    height: 18px;
+    font-size: 40%;
+    width: 60%;
+    position: relative;
+    top: 4px;
+    left: -5px;
+  }
+
+  /*-------- TAGS --------*/
+  .tags-area{
+    width: 92%;
+    min-height: 20px;
+  }
+
+  .tags{
+    margin-right: 20px;
+  }
+
+  .tag{
+    font-size: 15%;
+    font-weight: 700;
+    width: 12px;
+    margin-top: 5px;
+    height: 5px;
+    border-radius: none;
+    margin-left: 5px;
+  }
+
+  .tag p{
+    margin-top: -4px;
+    margin-left: -6px;
+    text-align: center;
+  }
+
+  /*-------- SAIDBAR --------*/
+  
+  .saidbar{
+    font-size: 10%;
+    width: 8%;
+  }
+
+  .first-saidbar{
+    border-bottom: none;
+    /* text-align: center; */
+    margin-top: 90px;
+
+  }
+  
+  .second-saidbar{
+    display: none;
+  }
+
+  .last-saidbar{
+    display: none;
+  }
+
+  /*-------- CONTENT --------*/
+  .content{
+  
+  }
+
+}
+

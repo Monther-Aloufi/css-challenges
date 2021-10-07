@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box{
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+
+}
+
+.icon{
+  width: 50px;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 65px;
+  transform: scale(2);
+  opacity: 0;
+  /* display: none; */
+  transition: 0.5s;
+  border-radius: 50%;
+  z-index: 0;
+  height: 50px;
+  cursor: pointer;
+}
+
+.row{
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 4px;
+}
+
+.bb{
+  display: inline-block;
+  background-color: #000;
+  width: 194px;
+  height: 194px;
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+  /* z-index: -1px; */
+}
+
+.image{
+  display: inline-block;
+  z-index: -2;
+}
+
+.hover:hover .bb{
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.hover:hover .icon{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close-box{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.close{
+  /* display: none; */
+}
+
+.head{
+  position: absolute;
+  top: 23.9%;
+}
+
+.img-header{
+  position: relative;
+}
+
+.img-profile{
+  width: 90px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 70%;
+  z-index: 10;
+}
+
+.close-icon{
+  position: absolute;
+  left: 85%;
+  z-index: 1;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: 0.3s;
+  cursor: pointer;
+  /* background-color: #000; */
+}
+
+.close-icon:hover{
+ transform: rotate(225deg); 
+}
+
+.infos{
+  width: 400px;
+  background-color: #EC6565;
+  height: 220px;
+  position: absolute;
+  top: 47.4%;
+  color: #fff;
+  font-weight: 600;
+  /* transform: translateY(103%); */
+  
+}
+
+.name-profile{
+  text-align: center;
+  margin-top: 65px;
+}
+
+.comment{
+  margin-left: 60px;
+  margin-top: 35px;
+}
+
+.f-comment{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff ;
+  border-radius: 50%; 
+  display: inline-block;
+  margin-left: 35px;
+  transition: all 0.3s;
+}
+
+.f-comment:hover{
+  background-color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 400px;
+  height: 400px;
+  background-color: #512626;
+  overflow: hidden;
+}
+
+.card{
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #E27474;
+  width: 197px;
+  height: 200px;
+  text-align: center;
+  transform:scaleX(1.03);
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.card:hover{
+  transform: scale(0.95);
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.205) inset;
+}
+
+.number-day{
+  font-size: 50px;
+}
+
+.in{
+  margin-top: 50px;
+}
+

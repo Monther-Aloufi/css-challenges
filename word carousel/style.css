@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 400px;
+  height: 400px;
+  background-color: #f39c12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text{
+  display: inline-block;
+  animation: rotate;
+  font-size: 30px;
+  color: #fff;
+}
+
+.change-word{
+  display: inline-block;
+  animation: rotate 8s ease-in-out infinite;
+}
+
+
+
+.element{
+  font-weight: 700;
+}
+
+.element p{
+  box-shadow: 2px 2px 2px #e67e22;
+}
+
+.word-1{
+  transform: translate(0%, -390%);
+}
+
+.word{
+  overflow: hidden;
+  height: 51px;
+}
+
+@keyframes rotate{
+  0%, 20% {
+		transform: translateY(3%);
+	}
+	25%,45% {
+		transform: translateY(-17%);
+	}
+	50%,70% {
+		transform: translateY(-39.3%);
+	}
+	75%,95% {
+		transform: translateY(-59.4%);
+	}
+	100% {
+		transform: translateY(79.5%);
+	}
+}

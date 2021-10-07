@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+    width: 400px;
+    height: 400px;
+    background-color: #57D895;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+input{
+    display: none;
+}
+
+.button{
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 10px 75px 10px 50px;
+    text-align: center;
+    direction: rtl;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    /* transition: background 0.3s, padding 0.5s, border 0.5s ease-in-out ; */
+
+    /* display: none; */
+}
+
+.stroke{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    stroke-dasharray: 245 245;
+    stroke-dashoffset: 245;
+}
+
+.button:hover{
+    background-color: #45b47b;
+    cursor: pointer;
+}
+
+p{
+    display: inline-block;
+    cursor: pointer;
+}
+
+img{
+    opacity: 0;
+    
+}
+
+
+/*---------- CHECKED ----------*/
+
+
+input:checked~.button p{
+    display: none;
+}
+
+input:checked~.button:hover{
+    background-color: #57D895;
+}
+
+input:checked~.button{
+    padding: 20px 25px;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0.3);
+    animation: BackgroundBtn 3.5s ease-out both;
+}
+
+input:checked~.button .stroke{
+    stroke-dashoffset: 0;
+    animation: StrokeStart 2s ease-out, OpacityStroke 3.5s ease-out both;
+}
+
+input:checked~.button img{
+    animation: ImgCheckMark 3.6s ease-out both;
+    
+
+}
+
+
+/*---------- KEYFRAMES ----------*/
+
+
+@keyframes StrokeStart{
+    0%{
+    stroke-dashoffset: 245;
+    }
+    20%{
+        stroke-dashoffset: 245;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+    
+}
+
+@keyframes OpacityStroke{
+    0%{
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.5) translate(-32.5%, -32.5%);
+    }
+}
+
+@keyframes ImgCheckMark{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes BackgroundBtn{
+    0%{
+        background-color: none;
+        border: 3x solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    25%{
+        background-color: none;
+        border: 3x solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    50%{
+        background-color: none;
+        border: 3x solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    99%{
+        background-color: none;
+        border: 3x solid rgba(255, 255, 255, 0.1);
+        
+    }
+
+    100%{
+        border: 3x solid rgba(255, 255, 255, 0.1);
+        background-color: white;
+
+    }
+}
